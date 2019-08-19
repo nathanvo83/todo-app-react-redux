@@ -45,7 +45,6 @@ const TodoForm = props => {
     <div className="todo-form">
       <div className="todo-form-inner">
         <h2 className="todo-form-title">TODO FORM</h2>
-        {/* <p className="todo-form-title">TODO FORM</p> */}
 
         <label>Name: </label>
         <input

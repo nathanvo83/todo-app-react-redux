@@ -11,13 +11,13 @@ import { TodoModel } from "../models/TodoModel";
 //   updateTodo
 // };
 
-// export const createEmtyTodoModel = () => new TodoModel();
 export const createTodoModel = (
   id = null,
   name = "",
   completed = false,
   dateCreated = ""
 ) => new TodoModel(id, name, completed, dateCreated);
+
 export const getTodoModelById = (todoes, id) => {
   return todoes.filter(todo => todo.id === id)[0];
 };

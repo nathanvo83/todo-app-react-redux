@@ -21,9 +21,7 @@ const Todo = ({ todo }) => {
       <span className="todo-name" onClick={addTodoHandler}>
         {name}
       </span>
-      {/* <button className="todo-name" onClick={addTodoHandler}>
-        {name}
-      </button> */}
+
       <br></br>
       <span> Date created: {dateCreated}</span>
       <br></br>

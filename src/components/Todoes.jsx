@@ -22,7 +22,6 @@ const Todoes = props => {
 
   return (
     <div>
-      {/* <label for="new-task">Add Item</label> */}
       <div className="todoes-title">
         <label>TODO LIST</label>
         <button className="add align-right" onClick={addTodoHandler}>
@@ -33,7 +32,6 @@ const Todoes = props => {
         ) : null}
       </div>
 
-      {/* <hr></hr> */}
       {todoes.map(todo => (
         <Todo key={todo.id} todo={todo}></Todo>
       ))}
@@ -45,15 +43,4 @@ const mapStateToProps = state => ({
   todoes: state.todoes
 });
 
-// const mapDispatchToProps = dispatch => ({
-//   () => dispatch(todoAction.addTodo());
-// });
-// const mapDispatchToProps = dispatch => ({
-//   addTodo: () => {
-//     dispatch(todoAction.addTodo();
-//   }
-// });
-
 export default connect(mapStateToProps)(Todoes);
-
-// export default Todoes;
